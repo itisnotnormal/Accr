@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+header {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgray;
+}
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+
+.logo img {
+    width: 60px;
+}
+
+nav {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1vh 2vh;
+    background-color: black;
+    border-radius: 10px;
+}
+.localization {
+    width: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.localization .center {
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    padding: 1vh 2vh;
+    
+}
+.localization button {
+    border: none;
+    cursor: pointer;
+    padding: 1vh 1vh;
+    background-color: lightgray;
+}
+main {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3vh;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+main .background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 0;
+}
+
+.background img.active {
+    opacity: 1;
+}
+
+main .main-text {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+main .form {
+    z-index: 1;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+main .form form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: lightgray;
+    width: 30%;
+    height: 100%;
+    border-radius: 10px;
+}
+main .form form input, main .form form select{
+    width: 80%;
+}
+main .form form .fio {
+    width: 80%;
+
+}
+main .form form .group {
+    width: 80%;
+
+}
+main .form form .speciality {
+    width: 80%;
+
+}
+main .form form .contacts {
+    width: 80%;
+
+}
+main .form form .nomination {
+    width: 80%;
+}
+main .form form button {
+    padding: 1vh 10vh;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .up {
+    background-color: lightgray;
+    width: 100%;
+    height: 30%;
+}
+footer .bottom {
+    background-color: darkgray;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10vh;
+    padding-top: 5vh;
+    width: 100%;
+}
+
+.main .Text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.main .schedule {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    flex-direction: column;
+}
+.main .schedule .schedule-hours {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 30%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.winners {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main .result-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.main .table {
+    width: 60%;
+    height: 40vh;
+}
+.main .table table {
+    width: 100%;
+    height: 100%;
+}
+.main .table table thead th {
+    text-align: left;
+    border-bottom: 1px solid lightgray;
+    padding: 1vh 0;
+}
+.main .table table tbody td {
+    border-bottom: 1px solid #ddd;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+.message {
+    color: green;
+    text-align: center;
+    opacity: 0; 
+}
+.message.show {
+    opacity: 1;
+}

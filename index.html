@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/logo.png" alt="">
+            <p id="name">КОЛЛЕДЖ ИНФОРМАЦИОННЫХ ТЕХНОЛОГИЙ</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="pages/results.html">Этапы</a></li>
+                <li><a href="pages/winners.html">Итоги</a></li>
+            </ul>
+        </nav>
+        <div class="localization">
+            <button onclick="changeLang('kz')">KZ</button>
+            <button onclick="changeLang('ru')" class="center">RU</button>
+            <button onclick="changeLang('en')">EN</button>
+        </div>
+    </header>
+    <main>
+        <div class="background">
+            <img src="images/загружено (1).jfif" alt="">
+            <img src="images/1.jpg.jfif" class="active" alt="">
+            <img src="images/2.jpg.jfif" alt="">
+            <img src="images/3.jpg.jfif" alt="">
+            <img src="images/4.jpg.jfif" alt="">
+            <img src="images/5.jpg.jfif" alt="">
+            <img src="images/загружено.jfif" alt="">
+            
+        </div>
+        <div class="main-text">
+            <h1>Внутриколледжный чемпионат ВСК</h1>
+            <h2>Покажи свои умения!</h2>
+        </div>
+        <div class="form">
+            <form id="regForm">
+                <p id="error" class="error"></p>
+                <div class="fio">
+                    <p>Фамилия, Имя, Отчество</p>
+                    <input type="text" id="fio">
+                </div>
+                <div class="group">
+                    <p>Группа</p>
+                    <input type="text" id="group">
+                </div>
+                <div class="speciality">
+                    <p>Специальность</p>
+                    <select id="speciality">
+                        <option value="">Выберите специальность</option>
+                        <option>Информационные системы</option>
+                        <option>Программное обеспечение</option>
+                        <option>Дизайн</option>
+                        <option>Сетевые технологии</option>
+                    </select>
+                </div>
+                <div class="contacts">
+                    <p>Контактный телефон (WhatsApp)</p>
+                    <input type="text" id="phone">
+                </div>
+                <div class="nomination">
+                    <p>Номинация конкурса</p>
+                    <select id="nomination">
+                        <option value="">Выберите номинацию</option>
+                        <option>Веб-разработка</option>
+                        <option>Программирование</option>
+                        <option>Дизайн</option>
+                        <option>Сетевые технологии</option>
+                    </select>
+                </div>
+                <button type="submit">Отправить заявку</button>
+                <p id="message" class="message"></p>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="up"><marquee>Регистрация до 15 февраля | Конкурс 20-24 февраля | Итоги 25 февраля | Победителей ждут призы!</marquee></div>
+        <div class="bottom">Колледж информационных технологий</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
